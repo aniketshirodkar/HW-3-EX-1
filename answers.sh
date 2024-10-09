@@ -23,8 +23,8 @@ SELECT employees.Name, companies.Name, companies.Date FROM Employees JOIN Compan
 SELECT employees.Name FROM Employees JOIN Companies ON Employees.Company =  Companies.Name WHERE Companies.Date < 2000;
 SELECT companies.Name FROM companies JOIN employees ON companies.Name = employees.Company WHERE Employees.Role = "Graphic Designer";
 
-select name from students where points=(SELECT MAX(points) from students);
-select AVG(points) from students;
-select COUNT(Name) from students where points=500;
-select Name from students WHERE Name GLOB '*s*';
-select name from students ORDER BY points DESC;
+SELECT name from students where points=(SELECT MAX(points) from students);
+SELECT AVG(points) from students;
+SELECT COUNT(Name) from students where points=500;
+SELECT Name from students WHERE Name GLOB '*s*';
+SELECT name from students ORDER BY points DESC;
